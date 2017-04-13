@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/ >
+  <title> Thanks </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+</head>
+<body ng-app="CogSci" ng-cloak>
+  <md-toolbar md-scroll-shrink>
+    <div class="md-toolbar-tools"> Thanks </div>
+  </md-toolbar>
+
+  <md-content style="margin: 20px; padding: 20px;">
+    <h1>Thanks</h3>
+
+    <md-button class="md-raised md-primary" ng-href="{% url 'index' %}" target="_blank">Take Another Test</md-button>
+  </md-content>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  <script type="text/javascript">    
+    angular.module('CogSci', ['ngMaterial']);
+  </script>
+
+</body>
+</html>

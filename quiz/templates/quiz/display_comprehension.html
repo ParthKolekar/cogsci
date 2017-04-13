@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/ >
+  <title> Comprehension </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+</head>
+<body ng-app="CogSci" ng-cloak>
+  <md-toolbar md-scroll-shrink>
+    <div class="md-toolbar-tools"> Comprehension </div>
+  </md-toolbar>
+
+  <md-content style="margin: 20px; padding: 20px; height: calc(100% - 120px);">
+    <md-card style="height: 100%;">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline"> Comprehension </span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content style="height: 100%;">
+        {{ comprehension.comprehension_text | linebreaks }}
+      </md-card-content>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button class="md-primary" ng-href="{% url 'display-question' %}"> Questions (Click after Reading) </md-button>
+      </md-card-actions>
+    </md-card>
+  </md-content>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  <script type="text/javascript">    
+    angular.module('CogSci', ['ngMaterial']);
+  </script>
+  
+</body>
+</html>
