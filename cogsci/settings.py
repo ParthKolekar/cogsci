@@ -25,7 +25,10 @@ SECRET_KEY = '%+&wf+#!=i-a049xyl@@3o@-gnuy3^0o%=04!yh=cl13-(nk7_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+	'10.1.36.79',
+	'saphira.parthkolekar.me',
+]
 
 
 # Application definition

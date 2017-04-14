@@ -16,7 +16,7 @@ class Question(models.Model):
     question_text = models.TextField()
 
     def __str__(self):
-        return "{:.25}...".format(self.question_text)
+        return "{:.25}... - {!s:.25}".format(self.question_text, self.question_comprehension)
     __repr__ = __str__
 
 
