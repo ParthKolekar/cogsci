@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
 	'10.1.36.79',
 	'saphira.parthkolekar.me',
+	'localhost',
+	'127.0.0.1',
 ]
 
 

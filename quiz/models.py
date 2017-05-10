@@ -14,6 +14,16 @@ class Comprehension(models.Model):
 class Question(models.Model):
     question_comprehension = models.ForeignKey(Comprehension)
     question_text = models.TextField()
+    question_answer = models.CharField(
+         choices=(
+            ('A', 'Option A'),
+            ('B', 'Option B'),
+            ('C', 'Option C'),
+            ('D', 'Option D'),
+            ('X', 'Not Submitted')
+        ),
+        max_length=255
+    )
 
     def __str__(self):
         return "{:.25}... - {!s:.25}".format(self.question_text, self.question_comprehension)
